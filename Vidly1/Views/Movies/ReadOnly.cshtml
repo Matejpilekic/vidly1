@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Vidly1.Models.Movie>
+
+@{
+    ViewBag.Title = "ReadOnly";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+@*
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>Genre</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", "Movies", new { id = item.Id }, null)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Movies", new { id = item.Id }, null)
+            </td>
+        </tr>
+    }
+
+</table>*@
+
+<table class="table" id="movies">
+    <thead>
+        <tr>
+            <th>Movies</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+
+</table>
+
+
+@section scripts {
+    <script>
+
+        $(document).ready(function () {
+
+            var table = $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name"
+                    },
+                    {
+                        data: "genre.name"
+                    },
+                ]
+            });
+        });
+    </script>
+}
