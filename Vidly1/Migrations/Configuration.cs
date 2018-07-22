@@ -27,7 +27,7 @@ namespace Vidly1.Migrations
               );
             }
 
-            if (context.Movies.Any())
+            if (!context.Movies.Any())
             {
                 context.Movies.AddOrUpdate(
                     new Movie { Name = "Superman", ReleaseDate = DateTime.Now, DateAdded = DateTime.Now, NumberInStock = 12, GenreId = 3 },

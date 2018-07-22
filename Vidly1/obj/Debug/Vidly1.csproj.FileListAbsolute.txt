@@ -289,3 +289,5 @@ C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.pdb
 C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.Migrations.seddUsers.resources
 C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.Migrations.AddDrivingLicenseToApplicationUser.resources
 C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.Migrations.AddPhoneOnIndetyModelForRegistration.resources
+C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.Migrations.AddRentalDomainModel.resources
+C:\Users\Matej\source\repos\Vidly1\Vidly1\obj\Debug\Vidly1.Migrations.AddNumberAvaibleInMovieModel.resources
