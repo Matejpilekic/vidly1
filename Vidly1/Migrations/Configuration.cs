@@ -25,6 +25,7 @@ namespace Vidly1.Migrations
                     new Customer { Name = "Marija Wiliams", BirthDate = DateTime.Now, IsSubscribedToNewsletter = false, MembershipTypeId = 2 },
                     new Customer { Name = "Ranko Ranic", BirthDate = DateTime.Now, IsSubscribedToNewsletter = false, MembershipTypeId = 2 }
               );
+                
             }
 
             if (!context.Movies.Any())

@@ -95,6 +95,7 @@ namespace Vidly1.Controllers.Api
         }
 
         //DELETE /api/movies/id
+        [HttpDelete]
         public IHttpActionResult DeleteMovie(int id)
         {
             var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
